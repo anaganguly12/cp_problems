@@ -1,24 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+typedef long long ll;
+// 1358A
 int main()
 {
-    int t;
+    ll t;
     cin >> t;
 
     while (t--)
     {
-        int n, m;
+        ll n, m;
         cin >> n >> m;
+        ll mul = n * m;
+        ll ans = (mul / 2) + (mul % 2);
 
-        int mul = n * m;
-        if (mul % 2 == 0)
-        {
-            cout << mul / 2 << endl;
-        }
-        else
-        {
-            cout << ((mul / 2) + 1) << endl;
-        }
+        cout << ans << endl;
     }
 }
